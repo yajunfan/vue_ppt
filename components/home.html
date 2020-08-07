@@ -1,0 +1,97 @@
+
+<div>  
+    <div class="show_container">
+        <Carousel v-model="value" height="auto">
+            <CarouselItem>
+                <div class="demo-carousel">
+                    <Row>
+                        <Col span="10"><img src="../images/vue.png" alt="vue" class="vueImg"></Col>
+                        <Col span="14">
+                            <p class="f100" style="margin-top: 20%;">
+                               <b>渐进式<br>JavaScript 框架</b> 
+                            </p> 
+                            <br>
+                            <p class="f34">
+                                VUE.JS
+                            </p> 
+                        </Col>
+                    </Row>
+                    
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">
+                    <ul class="instruction_lists">
+                        <li v-for="(item,index) in instrutionlists" :key="index" @click="jump(index)">
+                            <div class="dib">
+                                <span v-text="item.id" class="listtitle"></span>
+                                <img  class ="circle" src="../images/circle.png" alt="circle">
+                                <span class="dib listtitle_2 mrl40" v-text="item.name"></span>
+                                <img class ="line" src="../images/line.png" alt="line">
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">
+                    <Part :num="1" title="简单介绍"></Part>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">
+                    <Header title="概况"></Header>
+                    <transition name="slide-fade">
+                        <Row  v-if="showflag">
+                            <Col span="10" >
+                                <div class="bgImg">
+                                    <img src="../images/title.png" alt="vue" class="translateMove">
+                                </div>
+                            </Col>
+                            <Col span="14">
+                                <div class="instruct_box f34">
+                                    VUE (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的 <span class='cred'>渐进式框架</span> 。与其它大型框架不同的是，Vue 被设计为可以<span class='cred'>自底向上逐层</span>应用。
+                                    VUE 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。主要作用就是动态构建用户界面。
+                                </div>
+                            </Col>
+                        </Row>
+                    </transition>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">
+                    <Header title="渐进式渲染"></Header>
+                    <div class="step_container">
+                        <img src="../images/step1.png" alt="step1">
+                        <img src="../images/step2.png" alt="step2">
+                        <img src="../images/step3.png" alt="step3">
+                        <img src="../images/step4.png" alt="step4">
+                    </div>
+                    <div  class="f34 step_content">
+                        如图所示：vue的核心功能就是一个视图模板引擎。
+                        在声明式渲染（视图模板引擎）的基础上，我们可以通过添加组件系统、客户端路由、
+                        大规模状态管理来构建一个完整的框架
+                    </div>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">6</div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">7</div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">8</div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">9</div>
+            </CarouselItem>
+            <CarouselItem>
+                <div class="demo-carousel">10</div>
+            </CarouselItem>
+
+        </Carousel>
+    </div> 
+</div>
+

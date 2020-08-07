@@ -1,0 +1,153 @@
+.ivu-layout{
+    height: 100%;
+}
+.ivu-layout-content>div{
+    height: 99%;
+}
+.show_container{
+    height: 100%;
+    color: #75cff2;
+    /* background: #101010; */
+    background: -webkit-linear-gradient(left,#1F1B41 0%, #254B77 50%, #1F1B41 100%);
+}
+/* .demo-carousel{
+    background: url(../images/bgcircle.png) no-repeat 80% 20%;
+} */
+.show_container .ivu-carousel{
+    height: 97%;
+}
+.ivu-carousel-dots li button {
+    background: white;
+}
+.ivu-carousel-list .ivu-carousel-item{
+    height: 100%!important;
+}
+.vueImg{
+    width: 80%;
+    margin: 20% 10%;
+}
+.instruction_lists{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 12% 14%;
+}
+.instruction_lists li{
+    width:50%;
+    margin-bottom: 1%;
+    height: 220px;
+    
+}
+.instruction_lists li div{
+    position: relative;
+    line-height: 200px;
+}
+.instruction_lists li div .listtitle{
+    position: absolute;
+    left: 60px;
+    font-size: 30px;
+}
+.instruction_lists li div .circle{
+    -webkit-transform: rotate(360deg);
+    animation: rotation 7s linear infinite;
+    -webkit-animation: rotation 7s linear infinite;
+    
+}
+.instruction_lists li div .line{
+    position: absolute;
+    width: 400px;
+    left: 251px;
+    height: 10px;
+    bottom: 32%;
+}
+
+.listtitle_2{
+    vertical-align: text-bottom;
+    font-size: 40px;
+}
+/* part */
+.part_container .box{
+    margin-top: 60%;
+    height: 40% !important;
+    border: 5px solid #75cff2;
+}
+.part_container .lrimg{
+    width: 100%;
+    margin-top: 10%;
+    /* animation: fade 4s infinite;
+    -webkit-animation: fade 4s  infinite; */
+}
+/* .part_container .lrimg:first{
+    animation: fade 3s infinite;
+    -webkit-animation: fade 3s  infinite;
+} */
+.part_container .bgcircle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    opacity: 0.6;
+    -webkit-transform: rotate(360deg);
+    animation: 9s linear 0s infinite normal both running rotation;
+    -webkit-animation: 9s linear 0s infinite normal both running rotation;
+    /* animation: rotation 10s linear infinite;
+    -webkit-animation: rotation 10s linear infinite; */
+}
+.part_container .rightbg{
+    left: 60%;
+    top: -600px;
+    animation: rotation 6s linear infinite;
+    -webkit-animation: rotation 6s linear infinite;
+}
+
+.part_container  .centerbg{
+    top: -60%;
+    width: 400px;
+    height: 400px;
+    animation: rotation 10s linear infinite;
+    -webkit-animation: rotation 10s linear infinite;
+}
+.header_container{
+    position: relative;
+    height: 64px;
+    left: 0px;
+    animation: move 3s;
+    -webkit-animation:move 3s;
+}
+.header_container img{
+    height: 64px;
+}
+.header_container span{
+    position: relative;
+    left: -400px;
+    top: -7px;
+}
+.translateMove{
+    width: 600px;
+    height: 600px;
+    margin: 27%;
+    animation: moverotate 3s linear infinite;
+    -webkit-animation:moverotate 3s linear infinite;
+}
+.instruct_box{
+    width: 80%;
+    height: 460px;
+    margin-top: 16%;
+    border: 6px solid #3879a1;
+    padding:10px;
+    border-radius: 5px;
+}
+.step_container{
+    margin: 10% auto;
+    text-align: center;
+}
+.step_content{
+    width: 80%;
+    margin: 0 auto;
+}
+.step_container img{
+    width: 23%;
+    margin-left: -90px;
+}   
